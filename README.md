@@ -210,7 +210,8 @@ With the `positive linear relationship` confirmed, we will use KNIME for the nex
 
 1.  Connect the CSV Reader node to a Linear Correlation node.
     * The Linear Correlation node calculates the correlation coefficient between selected numerical columns, indicating the strength and direction of their linear relationship.  
-      ![image](https://github.com/user-attachments/assets/a2245a2e-ae2e-4876-ad44-281da261f033)
+      ![image](https://github.com/user-attachments/assets/032b4149-222b-4f2b-9f3e-fcfd0c7849d2)
+
 
 2.  Configure the Linear Correlation node to include `'Chirps15s'` and `'TempFahrenheit'`. Execute the node.  
    ![image](https://github.com/user-attachments/assets/bfae10bb-6588-49a3-94a1-ca6880e06f2c)  
@@ -268,5 +269,18 @@ Estimated temperature: ~79.35°F.
 ### **Interpretation and Conclusion**  
 Finally, in our project, we used the `data science life cycle` to determine if outside `temperature` can be estimated by cricket `chirp frequency`. We used a data collection method to gather data from the source and perform an `ETL process` to clean the data using pandas. We also used an `exploratory data analysis` technique, including `scatterplot` visualization, to analyze the `relationship` between `Chirp count 15 seconds` and the `temperature in Fahrenheit` values. This revealed a `strong positive linear relationship`, a correlation coefficient of `0.98`. This confirmed that the data is `suitable to build` our `supervised linear regression model`, which can be used to `predict` the estimated `temperature` based on cricket `chirp count`. With the help of our model, we predicted a few temperature values for chirp counts, and further, we manually calculated the temperature based on `40 chirps count` using our `linear equation`.
 
-License:    
-This project is licensed under the **MIT License**.
+## Future Improvements:
+* Explore other regression algorithms to see if they provide a better fit for the data.
+* Collect more data points or data under different conditions to enhance the model's robustness.
+* Build a simple application or web service to allow users to input chirp counts and get temperature predictions easily.
+* Investigate potential confounding factors that might influence both chirp frequency and temperature.
+
+## Skills Demonstrated
+* Data Acquisition and Preprocessing (combines Collection and Cleaning)
+* Exploratory Data Analysis (including Statistical Analysis and Correlation Analysis)
+* Statistical Modeling (Including Linear Regression)
+* Data Science Life Cycle
+* Interpretation of Results
+
+**License:**
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
